@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta 4</title>
+    <!-- Link to Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <div id="board">
+        <h1 id="title"><span id="turn" class="yellow"></span>'s Turn</h1>
+        <!--* Header with game info -->
+        <section id="game-info">
+            <!-- Scores -->
+            <div id="scores">
+                <!-- Yellow Score -->
+                <div class="score">
+                    <span class="yellow">Yellow: </span>
+                    <div id="yellow-score">0</div>
+                </div>
+
+                <!-- Red Score -->
+                <div class="score">
+                    <span class="red">Red: </span>
+                    <div id="red-score">0</div>
+                </div>
+
+            </div>
+
+            <!-- Game Buttons -->
+            <div id="game-buttons">
+                <button id="restart-game">Restart Game</button>
+                <button id="restart-scores">Restart Scores</button>
+            </div>
+        </section>
+
+        <!--* Board Game -->
+        <section id="game-board">
+        </section>
+    </div>
+
+
+
+
+    <!-- Link to js script -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -18,10 +18,10 @@ let score = JSON.parse(localStorage.getItem('score')) || { red: 0, yellow: 0 }
 let currentPlayer
 
 // This function initizalize the game variables
-function setGame(){
-  boardMap  = Array.from(new Array(nRows), () => new Array(nColumns).fill(slotTypes.empty))
-  currentPlayer = slotTypes.yellow
-  createBoard(boardMap)
+function setGame() {
+    boardMap = Array.from(new Array(nRows), () => new Array(nColumns).fill(slotTypes.empty))
+    currentPlayer = slotTypes.yellow
+    createBoard(boardMap)
 }
 
 // This function creates a div with the class slot and inside it a div with the class emptySlot
@@ -51,17 +51,16 @@ function createBoard(boardMap) {
     })
 }
 
-function setTitle(currentPlayer){
+function setTitle(currentPlayer) {
     titlePlayer.classList.remove('red', 'yellow')
-    if (currentPlayer == 1){
+    if (currentPlayer == slotTypes.yellow) {
         titlePlayer.innerText = 'Yellow'
         titlePlayer.classList.add('yellow')
     }
-    else if(currentPlayer == 2){
+    else if (currentPlayer == slotTypes.red) {
         titlePlayer.innerText = 'Red'
         titlePlayer.classList.add('red')
     }
-    
 }
 
 function gameMovement() {
@@ -71,4 +70,5 @@ function gameMovement() {
 document.addEventListener('DOMContentLoaded', () => {
     setGame()
     gameMovement()
+
 })

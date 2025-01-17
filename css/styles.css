@@ -149,22 +149,22 @@ button:hover {
 }
 
 .slot .empty-slot {
-    height: 4.5rem;
-    width: 4.5rem;
+    height: 4rem;
+    width: 4rem;
     border-radius: 50%;
-    background-color: var(--background-color);
+    background-color: rgb(155, 154, 154);
 }
 
 .slot .yellow-slot {
-    height: 4.5rem;
-    width: 4.5rem;
+    height: 4rem;
+    width: 4rem;
     border-radius: 50%;
     background-color: var(--yellow-color);
 }
 
 .slot .red-slot {
-    height: 4.5rem;
-    width: 4.5rem;
+    height: 4rem;
+    width: 4rem;
     border-radius: 50%;
     background-color: var(--red-color);
 }
